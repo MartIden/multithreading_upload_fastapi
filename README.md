@@ -20,3 +20,9 @@ if __name__ == '__main__':
 ```python
 path/to/project/python/interpreter main.py
 ```
+### 4. Отправка запроса
+Запрос отправляется по маршруту:
+```python
+/images
+```
+В корневой директории есть проект для Postman.
