@@ -9,7 +9,7 @@ app = FastAPI()
 
 @app.post("/images")
 async def images(user_images: List[UploadFile] = File(...)):
-    uploader = ImageUploader()
+    uploader = ImageUploader("images")
     uploaded_files = []
     for image in user_images:
         uploaded_files.append(

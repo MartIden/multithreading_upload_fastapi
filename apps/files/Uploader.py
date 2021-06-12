@@ -11,14 +11,14 @@ class BaseFileUploader:
     Базовый класс для валидации, нормализации и выгрузки файлов от клиента.
     """
 
-    def __init__(self, upload_folder: Path = config.UPLOAD_DIR):
+    def __init__(self, sub_folder: str = "/"):
         """
         Parameters
         ----------
         upload_folder : Path
             Путь к директории для сохранения файлов.
         """
-        self._UPLOAD_SUB_FOLDER = upload_folder
+        self._UPLOAD_SUB_FOLDER = Path(config.UPLOAD_DIR, sub_folder)
 
     def _make_unique_path(self, base_name: Path) -> Path:
         """
@@ -103,6 +103,5 @@ class MultiThreadUploader(Thread):
 class ImageUploader(BaseFileUploader):
     """TODO: Implement specific image processing logic when loading"""
 
-    def __init__(self, upload_folder: Path = config.UPLOAD_DIR):
-        super().__init__(upload_folder)
-        self._UPLOAD_SUB_FOLDER = Path(self._UPLOAD_SUB_FOLDER, "images")
+    def __init__(self, sub_folder: str):
+        super().__init__(sub_folder)

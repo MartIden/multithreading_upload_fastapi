@@ -4,8 +4,8 @@ __pycache__/
 *$py.class
 
 # Poject dirs
+
 static/upload/*
-static/upload/images/*
 
 # C extensions
 *.so
