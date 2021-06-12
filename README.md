@@ -16,11 +16,15 @@ pip install -r reqirements.txt
 if __name__ == '__main__':
     uvicorn.run("routes:app", host="127.0.0.1", port=8000, reload=True)
 ```
-### 3. Запускаем приложение:
+### 3. Указываем путь до корня проекта:
+```python
+ROOT = Path(HOME, "PycharmProjects/multithread_upload")
+```
+### 4. Запускаем приложение:
 ```python
 path/to/project/python/interpreter main.py
 ```
-### 4. Отправка запроса
+### 5. Отправка запроса
 Запрос отправляется по маршруту:
 ```python
 /images
