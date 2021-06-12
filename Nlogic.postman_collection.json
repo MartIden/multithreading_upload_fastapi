@@ -1,0 +1,46 @@
+{
+	"info": {
+		"_postman_id": "8c308643-e499-41fa-b9fd-31b9554be4d5",
+		"name": "Nlogic",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "images",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_images",
+							"type": "file",
+							"src": [
+								"/home/dukhovny/Рабочий стол/comm.txt",
+								"/home/dukhovny/Рабочий стол/comm (копия)",
+								"/home/dukhovny/Рабочий стол/edu.txt",
+								"/home/dukhovny/Рабочий стол/jinja.jinja"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/images",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"images"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
