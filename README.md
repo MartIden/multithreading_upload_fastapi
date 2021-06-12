@@ -9,7 +9,7 @@ git clone https://github.com/MartIden/multithreading_upload_fastapi.git
 
 ### 1. Запускаем установку зависимостей: 
 ```python
-    pip install -r reqirements.txt
+pip install -r reqirements.txt
 ```
 ### 2. Конфигурируем настройки uvicorn (по необходимости прокидываем кастомный ip:port):
 ```python
