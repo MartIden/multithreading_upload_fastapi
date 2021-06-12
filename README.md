@@ -25,4 +25,7 @@ path/to/project/python/interpreter main.py
 ```python
 /images
 ```
-В корневой директории есть проект для Postman.
+В корневой директории есть проект для Postman:
+```python
+Nlogic.postman_collection.json 
+```
