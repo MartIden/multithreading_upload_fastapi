@@ -13,5 +13,5 @@ if __name__ == '__main__':
 ```
 ### 3. Запускаем приложение:
 ```python
-path_to_project_python_interpreter main.py
+path/to/project/python/interpreter main.py
 ```
