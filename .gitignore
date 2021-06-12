@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Poject dirs
+static/upload/
+
 # C extensions
 *.so
 
